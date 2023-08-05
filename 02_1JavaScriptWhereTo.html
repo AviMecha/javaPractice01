@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<!-- head섹션에 스크립트 배치, 
+    함수 기능설정, body에서 함수기능 'myFunction()'을 호출해서 사용 -->
+
+<head>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Paragraph changed.";
+        }
+        function myFunction1() {
+            document.getElementById("demo1").innerHTML = "Head스크립트 변경 성공"
+        }
+    </script>
+</head>
+
+<!-- body섹션에 스크립트 배치도 가능 head섹션과 동일 작용 -->
+
+<body>
+
+    <script>
+        function myFunction2() {
+            document.getElementById("demo2").innerHTML = "Body스크립트 변경 성공"
+        }
+    </script>
+
+    <!-- 외부 파일의 javaScript 불러와서 사용하기 -->
+    <script src="02_2JavaScriptWhereTo.js">
+
+    </script>
+
+    <h2>Demo JavaScript in Head</h2>
+    <p id="demo">A Paragraph.</p>
+    <p id="demo1">첫 문단</p>
+    <p id="demo2">body섹션의 스크립트 배치</p>
+    <p id="demo3">외부스크립트 배치</p>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <button type="button" onclick="myFunction1()">클릭!</button>
+    <button type="button" onclick="myFunction2()">클릭!!</button>
+    <button type="button" onclick="myFunction3()">클릭!!!</button>
+
+</body>
+
+</html>

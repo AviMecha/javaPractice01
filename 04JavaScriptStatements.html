@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Statements(문)</h2>
+
+<p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+
+<p id="demo"></p>
+
+<!-- 내부 HTML 사용하기 -->
+<script>
+let x, y, z;  // Statement 1
+x = 5;        // Statement 2
+y = 6;        // Statement 3
+z = x + y;    // Statement 4
+
+document.getElementById("demo").innerHTML = 
+"The value of z is " + z + ".";  
+</script>
+
+<br></br>
+<br></br>
+<br></br>
+
+<!-- HTML에서 JavaScript문은 웹브라우저에 의해 프로그램이 구동됨 -->
+<p id="demo1"></p>
+
+<script>
+document.getElementById("demo1").innerHTML = "안녕?!";
+</script>
+
+<br></br>
+<br></br>
+<br></br>
+<!-- 한 줄에 여러개의 문을 작성할 수도 있다 -->
+<p id="demo2"></p>
+
+<script>
+let a, b, c;
+a = 5; b = 6; c = a + b;
+document.getElementById("demo2").innerHTML = c;
+</script>
+
+<br></br>
+<br></br>
+<br></br>
+
+<p>JavaScript code blocks are written between { and }</p>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<p id="demo3"></p>
+<p id="demo4"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo3").innerHTML = "자바스크립트 코드 블록은";
+  document.getElementById("demo4").innerHTML = "function ...() {여기에 기록}";
+}
+</script>
+
+</body>
+</html>

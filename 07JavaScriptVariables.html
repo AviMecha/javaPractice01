@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>JavaScript Variables</h1>
+
+    <p>x, y, z는 선언되지 않습니다.</p>
+    <p>처음 사용할 때 자동으로 선언됩니다.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        x = 5;
+        y = 6;
+        z = x + y;
+        document.getElementById("demo").innerHTML =
+            "The value of z is: " + z;
+    </script>
+
+    <br></br>
+    <br></br>
+
+
+    <p>사용하기 전에 항상 변수를 선언하는 것이
+        좋은 프로그래밍 방법으로 간주됩니다.</p>
+    <p id="demo1"></p>
+    <script>
+        var a = 1;
+        var b = 2;
+        var c = a + b;
+        document.getElementById("demo1").innerHTML =
+            "The value of z is: " + c;
+    </script>
+
+    <br></br>
+    <br></br>
+
+    <p>var 키워드는 1995년부터 2015년까지 모든 자바스크립트 코드에서 사용되었습니다.</p>
+
+    <p>let와 const 키워드는 2015년에 자바스크립트에 추가되었습니다.</p>
+
+    <p>var 키워드는 이전 브라우저용으로 작성된 코드에서만 사용해야 합니다.</p>
+
+    <p>const를 사용할 수 없는 경우에만 let를 사용</p>
+
+    <br></br>
+    <br></br>
+
+    <p>let, const 변수 선언은 섞어서도 사용할 수 있음</p>
+    <p id="demo2"></p>
+
+    <script>
+        const price1 = 5;
+        const price2 = 6;
+        let total = price1 + price2;
+        document.getElementById("demo2").innerHTML =
+            "The total is: " + total;
+    </script>
+
+    <br></br>
+    <br></br>
+
+    <p>문자열은 따옴표로 감싼다.</p>
+    <p>숫자는 따옴표로 감싸지 않는다.</p>
+
+    <p id="demo3"></p>
+
+    <script>
+        const pi = 3.14;
+        let person = "존 도이";
+        let answer = '그게 바로 나야';
+
+        document.getElementById("demo3").innerHTML =
+            pi + "<br>" + person + "<br>" + answer;
+    </script>
+
+    <br></br>
+    <br></br>
+
+    <p>하나의 문장에서 여러 변수를 선언할 수 있다. </p>
+
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+
+    <script>
+        let person1 = "John Doe",
+            carName = "Volvo",
+            price = 200;
+
+        document.getElementById("demo4").innerHTML = carName;
+        document.getElementById("demo5").innerHTML = person1;
+        document.getElementById("demo6").innerHTML = price;
+    </script>
+    <button type="button" onclick='document.getElementById("demo4")
+    .innerHTML = "carName"'>클릭!</button>
+    <button type="button" onclick='document.getElementById("demo5")
+    .innerHTML = "person"'>클릭!</button>
+    <button type="button" onclick='document.getElementById("demo6")
+    .innerHTML = "price"'>클릭!</button>
+
+
+    <br></br>
+    <br></br>
+
+    <p>값 없이 선언된 변수는 undefined로 나타남</p>
+    <p id="demo7"></p>
+
+    <script>
+        let carName1;
+        document.getElementById("demo7").innerHTML = carName1;
+    </script>
+
+    <br></br>
+    <br></br>
+
+
+    <p>자바스크립트 변수 재선언</p>
+
+    <p> var로 선언한 JavaScript 변수를 다시 선언해도 해당 값이 손실되지 않습니다.</p>
+
+    <p>변수 carName은 다음 문장이 실행된 후에도 "Volvo" 값을 유지합니다.</p>
+
+    <p id="demo8"></p>
+
+    <script>
+        var carName2 = "Volvo";
+        var carName2;
+        document.getElementById("demo8").innerHTML = carName2;
+    </script>
+
+    <br></br>
+    <br></br>
+
+
+    <p>대수학과 마찬가지로 = 및 +와 같은 연산자를 사용하여 자바스크립트 변수로 산술을 수행할 수 있습니다:</p>
+    
+    <p id="demo9"></p>
+
+    <script>
+        let x1 = 5 + 2 + 3;
+        document.getElementById("demo9").innerHTML = x1;
+    </script>
+
+<br></br>
+<br></br>
+<p>따옴표가 들어가면 "5" + 2 + 3 문자열로 인식한다</p>
+<p id="demo10"></p>
+
+<script>
+let x2 = "5" + 2 + 3;
+document.getElementById("demo10").innerHTML = x2;
+</script>
+
+<br></br>
+<br></br>
+
+<p>달러 기호는 자바스크립트 이름의 문자로 처리된다</p>
+<p id="demo11"></p>
+
+<script>
+let $$$ = 2;
+let $myMoney = 5;
+document.getElementById("demo11").innerHTML = $$$ + $myMoney;
+</script>
+
+<br></br>
+<br></br>
+
+<p>자바스크립트 밑줄(_)</p>
+<p>JavaScript는 밑줄을 문자로 처리하므로 </p>
+<p>_를 포함하는 식별자는 유효한 변수 이름입니다</p>
+
+</body>
+
+</html>
